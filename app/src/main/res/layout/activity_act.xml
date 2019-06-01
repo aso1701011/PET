@@ -11,11 +11,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" tools:srcCompat="@drawable/machie_white"
             android:id="@+id/image"
-            app:srcCompat="@drawable/machie_white" app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/machie_white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.471"/>
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/ヘッダー"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
             android:text="もどる"
             android:layout_width="wrap_content"
@@ -24,4 +24,38 @@
             app:layout_constraintTop_toBottomOf="@+id/image"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:visibility="invisible"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="174dp"
+            android:background="@drawable/background_orenge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" android:id="@+id/ヘッダー">
+
+        <ImageView
+
+                android:layout_width="232dp"
+                android:layout_height="46dp" app:srcCompat="@drawable/love_bar"
+                android:id="@+id/love_bar"
+                android:layout_marginTop="112dp" app:layout_constraintTop_toTopOf="parent" android:scaleType="fitXY"
+                android:layout_marginStart="350dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="350dp"
+        />
+        <TextView
+                android:text="PETの名前"
+                android:layout_width="213dp"
+                android:layout_height="69dp" android:id="@+id/petName" android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="45dp" android:layout_marginStart="45dp" android:layout_marginTop="53dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+                android:layout_width="232dp"
+                android:layout_height="46dp" app:srcCompat="@drawable/hp_bar"
+                android:id="@+id/hp_bar" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="52dp"
+                android:scaleType="fitXY" android:layout_marginStart="350dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="350dp"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>
